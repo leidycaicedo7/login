@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comfama</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/estilos.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg menu navbar-dark fixed-top" id="menu">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 text-white fw-bold mt-5">
+                        <h4>Registrate</h4>
+                        <hr>
+                        <form class="formulario p-5">
+                            <div class="mb-3">
+                                <label class="form-label">Correo:</label>
+                                <input type="email" class="form-control" id="correo">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contraseña:</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mt-4">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </section>
+        <section>
+
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-6 animate__animated animate__backInLeft wow">
+                <img src="./assets/img/fotojuego.jpg" alt="foto" class="img-fluid w-100">
+              </div>
+              <div class="col-6 align-self-center animate__animated animate__backOutRight wow">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam qui reiciendis tempore aliquid nemo excepturi aliquam suscipit explicabo consectetur hic adipisci ab debitis eveniet, quos ex sed culpa repellendus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quam facilis, numquam repellendus quaerat architecto repudiandae ut explicabo. Harum, eveniet odit praesentium aliquam officiis explicabo deleniti necessitatibus eligendi adipisci dicta.</p>
+              </div>
+            </div>
+            <div class="row"></div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container-fluid my-5">
+            <div class="row row-cols-1 row-cols-md-5 g-3" id="fila">
+              
+             
+
+            </div>
+          </div>
+        </section>
+    </main>
+
+
+    <script src="./services/servicioTOKEN.js"></script>
+    <script src="./controllers/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="./controllers/controladorMenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+</body>
+</html>
